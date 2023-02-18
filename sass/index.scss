@@ -30,12 +30,8 @@ header {
 	// height: 83px;
 	overflow: hidden;
 }
-header.fixed {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 2;
+body.fixed {
+	overflow: hidden;
 }
 .header-inner {
 	max-width: 1365px;
@@ -197,6 +193,57 @@ header.fixed {
 			padding-bottom: 50px;
 		}
 	}
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fadein {
+	animation: fadein 1.5s ease-in-out forwards;
+}
+@keyframes slidein {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.slidein {
+	animation: slidein 1s ease-in-out forwards;
+}
+@keyframes slideinbottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.slideinbottom {
+	animation: slideinbottom 1s ease-in-out forwards;
+}
+.delay01 {
+	animation-delay: 0.1s;
+}
+.delay02 {
+	animation-delay: 0.2s;
+}
+.delay03 {
+	animation-delay: 0.3s;
+}
+.js-fadein,
+.js-slidein-bottom,
+.js-slidein {
+	opacity: 0;
 }
 .mv-box {
 	// width: 700px;
@@ -389,6 +436,7 @@ header.fixed {
 			font-weight: 600;
 			margin-bottom: 38px;
 			color: #21243d;
+			opacity: 0;
 			@include tab {
 			  	font-size: 24px;
 			  	margin-bottom: 20px;
