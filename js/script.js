@@ -56,4 +56,16 @@ jQuery(function() {
 	    }
 	  }
 	});
+
+	let targets_scale = document.querySelectorAll('.js-scale');
+	$(window).on('scroll load', function() {
+		var scroll = window.scrollY; //スクロール量を取得
+	  	var windowHeight = window.innerHeight; //画面の高さを取得
+	  	for (let target of targets_scale) { //ターゲット要素がある分、アニメーション用のクラスをつける処理を繰り返す
+	    var targetPos = target.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+	    if (scroll > targetPos - windowHeight + 200) { //スクロール量 > ターゲット要素の位置
+	      target.classList.add('scale'); //is-animatedクラスを加える
+	    }
+	  }
+	});
 });

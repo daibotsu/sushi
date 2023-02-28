@@ -216,7 +216,7 @@ body.fixed {
 	}
 }
 .slidein {
-	animation: slidein 1s ease-in-out forwards;
+	animation: slidein 0.8s ease-in-out forwards;
 }
 @keyframes slideinbottom {
 	0% {
@@ -229,7 +229,7 @@ body.fixed {
 	}
 }
 .slideinbottom {
-	animation: slideinbottom 1s ease-in-out forwards;
+	animation: slideinbottom 0.8s ease-in-out forwards;
 }
 .delay01 {
 	animation-delay: 0.1s;
@@ -242,8 +242,23 @@ body.fixed {
 }
 .js-fadein,
 .js-slidein-bottom,
-.js-slidein {
+.js-slidein,
+.js-scale {
 	opacity: 0;
+}
+.scale {
+	animation: scale 0.8s ease-in-out forwards;
+}
+@keyframes scale {
+	0% {
+		opacity: 0;
+		transform: scale(3, 0.2);
+		transform-origin: center center;
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
 }
 .mv-box {
 	// width: 700px;
