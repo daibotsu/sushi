@@ -1,0 +1,51 @@
+width 1440
+nav [Montserrat][Regular]25px #fff
+
+top 
+title [Montserrat] bold 124.63px #fff
+
+p [Montserrat][Regular] 29.72px #fff
+
+btn [Montserrat]bold 25px w320px padding 21px
+
+section2 
+
+ttl [Montserrat] bold #fff 63.66px
+p  [Montserrat][Regular] 25.23px
+
+card ttl [Montserrat] bold 28.83px
+     p [Montserrat]regular 16.85px
+
+section 3 
+
+ttl [Montserrat] bold #21243d 75px
+p [Montserrat]regular 29.72px
+
+section4 
+
+ttl  [Montserrat] bold #fff 62.26px 
+p p [Montserrat]regular 29.72px
+
+card top [Montserrat] bold 75px
+     bottom 41.67px
+
+section 5 
+ttl [Montserrat] bold 75px
+p [Montserrat]regular 29.72px
+
+section 6 
+p  41.67px [Montserrat]regular
+
+span 44.9px  [Montserrat]bold
+
+section 7 
+
+ttl [Montserrat] bold 75px
+p [Montserrat]regular 29.72px
+subscribe [Montserrat] bold 25px
+
+footer 
+ttl 31.6px [Montserrat]regular
+p, list [Montserrat]regular 23.7px
+
+
